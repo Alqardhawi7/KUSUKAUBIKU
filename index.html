@@ -612,14 +612,13 @@
 
       </div>
 
-    </section><!-- /Team Section -->
-
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Kontak</span>
         <h2>Kontak</h2>
+        <p>Hubungi kami untuk pemesanan, kemitraan reseller, atau pertanyaan seputar produk</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -628,7 +627,7 @@
           <div class="contact-info-panel">
             <div class="contact-info-header">
               <h3>Informasi Kontak</h3>
-              <p>Hubungi kami untuk pemesanan, kemitraan reseller, atau pertanyaan seputar produk</p>
+              <p>Kami siap membantu kebutuhan tepung untuk dapur rumah maupun usaha Anda. Silakan hubungi kami melalui kanal berikut.</p>
             </div>
 
             <div class="contact-info-cards">
@@ -638,27 +637,28 @@
                 </div>
                 <div class="card-content">
                   <h4>Alamat</h4>
-                  <p>Kepuh Kulon, Wirokerten, Banguntapan, Bantul Regency, Special Region of Yogyakarta 55194</p>
+                  <p>Kepuh Kulon, Wirokerten, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55194</p>
                 </div>
               </div>
 
               <div class="info-card">
                 <div class="icon-container">
-                  <i class="bi bi-telephone-fill"></i>
+                  <i class="bi bi-whatsapp"></i>
                 </div>
                 <div class="card-content">
-                  <h4>Telepon 1</h4>
-                  <p>+62 811-2501-916</p>
+                  <h4>WhatsApp</h4>
+                  <!-- GANTI 628xxxxxxxxxx dengan nomor asli (format 62, tanpa 0 di depan, tanpa spasi/+) -->
+                  <p><a href="https://wa.me/628xxxxxxxxxx" target="_blank" rel="noopener">+62 8xx-xxxx-xxxx</a></p>
                 </div>
               </div>
 
               <div class="info-card">
                 <div class="icon-container">
-                  <i class="bi bi-telephone-fill"></i>
+                  <i class="bi bi-instagram"></i>
                 </div>
                 <div class="card-content">
-                  <h4>Telepon 2</h4>
-                  <p>+62 812-2702-115</p>
+                  <h4>Instagram</h4>
+                  <p><a href="https://www.instagram.com/kusukaubiku" target="_blank" rel="noopener">@kusukaubiku</a></p>
                 </div>
               </div>
 
@@ -667,8 +667,9 @@
                   <i class="bi bi-clock-history"></i>
                 </div>
                 <div class="card-content">
-                  <h4>Jam Kerja</h4>
-                  <p>Senin-Sabtu: 08.00 - 16.00</p>
+                  <h4>Jam Operasional</h4>
+                  <!-- SESUAIKAN dengan jam buka yang sebenarnya -->
+                  <p>Senin - Sabtu: 08.00 - 16.00 WIB</p>
                 </div>
               </div>
             </div>
@@ -676,33 +677,40 @@
 
           <div class="contact-form-panel">
             <div class="form-container">
-              <h3>Hubungi Kami</h3>
+              <h3>Kirim Pesan</h3>
+              <p>Tulis kebutuhan atau pertanyaan Anda, kami akan membalas secepatnya.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="post" class="php-email-form">
+
+                <!-- GANTI dengan Access Key milik Anda dari web3forms.com -->
+                <input type="hidden" name="access_key" value="6be5bb0d-bf61-465d-b08c-9062e5772b55">
+                <input type="hidden" name="from_name" value="Website UMKM Kusuka Ubiku">
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Nama Lengkap" required="">
                   <label for="nameInput">Nama Lengkap</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Alamat Email" required="">
                   <label for="emailInput">Alamat Email</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
-                  <label for="subjectInput">Subyek</label>
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subjek" required="">
+                  <label for="subjectInput">Subjek</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
+                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Pesan Anda" style="height: 150px" required=""></textarea>
                   <label for="messageInput">Pesan Anda</label>
                 </div>
 
                 <div class="my-3">
-                  <div class="loading">Menunggu</div>
+                  <div class="loading">Mengirim...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Pesan anda telah dikirim, terima kasih!</div>
+                  <div class="sent-message">Pesan Anda sudah terkirim. Terima kasih!</div>
                 </div>
 
                 <div class="d-grid">
@@ -714,7 +722,7 @@
 
         </div><!-- End Contact Wrapper -->
 
-        <!-- Peta: lebar penuh di bawah Contact Information & Send Message -->
+        <!-- Peta: lebar penuh di bawah Informasi Kontak & Kirim Pesan -->
         <div class="map-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.415778128083!2d110.40194120000001!3d-7.851479299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a56ea07dc73f5%3A0xdc403da3222d5563!2sKusuka%20Ubiku%20(Nanik%20Yuniarti)!5e0!3m2!1sen!2sid!4v1794309495683!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div><!-- End Map -->
@@ -757,7 +765,49 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<!-- Letakkan SETELAH <script src="assets/js/main.js"></script> dan SEBELUM </body> -->
+  <script>
+    // Kirim form kontak lewat Web3Forms (menggantikan validate.js / contact.php)
+    document.addEventListener('submit', async function (e) {
+      const form = e.target.closest('#contactForm');
+      if (!form) return;
 
+      e.preventDefault();
+      e.stopImmediatePropagation();
+
+      const loading = form.querySelector('.loading');
+      const error   = form.querySelector('.error-message');
+      const sent    = form.querySelector('.sent-message');
+      const btn     = form.querySelector('button[type="submit"]');
+
+      loading.style.display = 'block';
+      error.style.display = 'none';
+      sent.style.display = 'none';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          sent.style.display = 'block';
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Gagal mengirim');
+        }
+      } catch (err) {
+        error.textContent = 'Pesan gagal dikirim. Silakan coba lagi nanti.';
+        error.style.display = 'block';
+      } finally {
+        loading.style.display = 'none';
+        btn.disabled = false;
+      }
+    }, true);
+  </script>
 </body>
 
 </html>
