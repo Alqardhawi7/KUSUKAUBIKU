@@ -3463,3 +3463,33 @@ section,
     height: 28px;
   }
 }
+/* ===== Teks rata kiri-kanan (justify) =====
+   Kecuali: judul, Produk, dan Struktur Organisasi */
+
+/* Hero */
+.hero .hero-content p {
+  text-align: justify;
+  text-align-last: center; /* baris terakhir tetap di tengah karena hero-nya center */
+  text-justify: inter-word;
+}
+
+/* Tentang Kami */
+.about .content .highlight-text,
+.about .feature-item .text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Layanan */
+.services .service-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Kontak */
+.contact .contact-info-header p,
+.contact .info-card .card-content p,
+.contact .form-container > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
